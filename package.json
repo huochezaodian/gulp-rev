@@ -5,10 +5,10 @@
   "main": "gulp-config.js",
   "dependencies": {},
   "devDependencies": {
+    "browser-sync": "^2.18.12",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^4.0.0",
     "gulp-clean": "^0.3.2",
-    "gulp-connect": "^5.0.0",
     "gulp-less": "^3.3.0",
     "gulp-load-plugins": "^1.5.0",
     "gulp-minify-css": "^1.2.4",
