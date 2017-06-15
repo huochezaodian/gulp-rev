@@ -44,13 +44,13 @@ gulp.task('lessWatch', function () {
 
 //本地服务
  
-gulp.task('server', function () {
-    plugins.connect.server({
-    	root:'F:/gulp-rev/index.html',
-        port:8083,
-        livereload:true,
-    });
-});
+// gulp.task('server', function () {
+//     plugins.connect.server({
+//     	root:'F:/gulp-rev/index.html',
+//         port:8083,
+//         livereload:true,
+//     });
+// });
 
 gulp.task("browsersync",function(){
     browsersync.init({
@@ -60,4 +60,4 @@ gulp.task("browsersync",function(){
     });
 });
 
-gulp.task('default', gulpSync.sync(['server', 'clean', 'less', 'rev', 'lessWatch']));
+gulp.task('default', gulpSync.sync(['browsersync', 'clean', 'less', 'rev', 'lessWatch']));
